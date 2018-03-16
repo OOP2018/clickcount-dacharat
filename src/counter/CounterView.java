@@ -33,6 +33,9 @@ public class CounterView implements java.util.Observer {
 		initComponents();
 	}
 	
+	/**
+	 * Create UI to show value of counter.
+	 */
 	private void initComponents() {
 		stage = new Stage();
 		// components and containers for our window
@@ -61,10 +64,16 @@ public class CounterView implements java.util.Observer {
 		displayCount();
 	}
 	
+	/**
+	 * Show value of count on UI.
+	 */
 	public void displayCount() {
 		label.setText( String.format("%2d", counter.getCount()) );
 	}
 
+	/**
+	 * Update what happen in observable.
+	 */
 	@Override
 	public void update(Observable o, Object arg) {
 		displayCount();

@@ -19,6 +19,9 @@ public class ConsoleView implements java.util.Observer {
 		this.counter = counter;
 	}
 
+	/**
+	 * Update what happen in observable.
+	 */
 	@Override
 	public void update(Observable subject, Object info) {
 //		if (info == null)

@@ -24,11 +24,20 @@ public class ClickController {
 		this.counter = counter;
 	}
 	
+	/**
+	 * Add counter value by 1.
+	 * 
+	 * @param event
+	 */
 	public void plusButtonHandler(ActionEvent event) {
 		counter.add(1);
 	}
 	
-	
+	/**
+	 * Decrease counter value by 1.
+	 * 
+	 * @param event
+	 */
 	public void minusButtonHandler(ActionEvent event) {
 		counter.add(-1);
 	}

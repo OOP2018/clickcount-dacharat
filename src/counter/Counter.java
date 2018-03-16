@@ -2,15 +2,24 @@ package counter;
 
 /**
  * A simple counter.
+ * 
+ * @author Dacharat Pankong
  */
-
 public class Counter extends java.util.Observable {
 	private int count;
 
+	/**
+	 * Initialize counter.
+	 */
 	public Counter() {
 		this.count = 0;
 	}
 
+	/**
+	 * Change value of counter.
+	 * 
+	 * @param howmuch value to change.
+	 */
 	public void add(int howmuch) {
 		count += howmuch;
 		// Its like if the Bank sends you an SMS whenever money
@@ -22,6 +31,11 @@ public class Counter extends java.util.Observable {
 		notifyObservers();
 	}
 
+	/**
+	 * Return value of count.
+	 * 
+	 * @return value of count.
+	 */
 	public int getCount() {
 		return count;
 	}
